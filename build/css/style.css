@@ -1,0 +1,13 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: "Open Sans_my", sans-serif;
+  color: #000; }
+
+.page-header {
+  color: #000; }
+
+.header__inner {
+  width: 1200px; }
+
+/*# sourceMappingURL=style.css.map */
