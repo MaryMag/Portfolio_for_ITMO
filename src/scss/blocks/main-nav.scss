@@ -1,11 +1,23 @@
 .main-nav {
-
+  
+  background-color: #1c1531;
+  background-opacity: 50%;
 
   &__list {}
 
 
-  &__item {}
+  &__item {
+    display: inline-block;
+  }
 
 
-  &__link {}
+  &__link {
+    text-decoration: none;
+    font-family: $font-p;
+    font-style: 16px;
+    line-height: 36px;
+    color: #fff;
+    margin: 24px 0;
+  }
+
 }

@@ -1,4 +1,8 @@
 .side-bar {
 
-  &__link {}
+  &__link {
+    font-family: $font-h;
+    font-size: 16px;
+    line-height: 36px;
+  }
 }
