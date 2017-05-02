@@ -175,13 +175,25 @@ body {
 
 .slider {
   width: 45%;
-  overflow: hidden;
-  display: inline-block; }
+  display: block; }
   .slider__item {
     color: #201c38;
     font-family: "Ubuntu", sans-serif;
     font-size: 16px;
-    line-height: 30px; }
+    line-height: 30px;
+    display: block;
+    width: 100px; }
+  .slider__item__left {
+    float: left;
+    width: 50%; }
+  .slider__item__right {
+    width: 50%;
+    float: right;
+    background-image: url("../../img/message.png");
+    background-position: -10px -10px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top; }
 
 .container {
   width: 1170px;
@@ -221,6 +233,7 @@ body {
     color: #201c38;
     font-family: "Ubuntu", sans-serif;
     font-size: 16px;
+    line-height: 30px;
     vertical-align: top;
     position: relative;
     margin-bottom: 60px; }
@@ -245,21 +258,138 @@ body {
 
 .where-when {
   width: 100%;
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0; }
   .where-when__block {
     display: inline-block;
     width: 40%;
-    float: right; }
+    float: right;
+    padding-left: 30px; }
   .where-when__title {
     font-family: "Jura", sans-serif;
     color: #4d4b5c;
     font-size: 30px; }
+  .where-when__text {
+    font-family: "Ubuntu", sans-serif;
+    color: #4d4b5c;
+    font-size: 16px;
+    line-height: 30px; }
+  .where-when__markers {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .where-when__marker {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 30px; }
+  .where-when__marker:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: #ef8989;
+    margin-right: 10px; }
+  .where-when__marker:nth-child(2):before {
+    background-color: #04a8a8; }
+  .where-when__marker:nth-child(3):before {
+    background-color: #cdd63f; }
+  .where-when__marker:nth-child(4):before {
+    background-color: #efb672; }
 
 .map {
   width: 60%; }
   .map-img {
-    width: 100%;
-    height: 100%; }
+    width: 670px;
+    height: 531px; }
+
+.comments {
+  width: 100%;
+  background-color: #b2dad0; }
+  .comments__title {
+    font-family: "Jura", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #212027; }
+  .comments__img {
+    width: 170px;
+    height: 150px;
+    display: inline-block; }
+
+.contacts {
+  width: 100%;
+  background-image: url("../../img/fon_contacts.jpg");
+  background-repeat: no-repeat;
+  webkit-background-size: cover;
+  background-size: cover; }
+  .contacts__title {
+    font-family: "Jura", sans-serif;
+    font-size: 30px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: normal;
+    margin-top: 60px;
+    margin-bottom: 70px; }
+
+.filial {
+  width: 16.4%;
+  display: inline-block; }
+  .filial__title {
+    font-family: "Jura", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal; }
+  .filial__title:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #89c1a1;
+    margin-right: 15px; }
+  .filial__manager {
+    margin-top: 20px;
+    font-family: "Jura", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: normal; }
+  .filial-connections {
+    margin-top: 40px;
+    margin-bottom: 140px; }
+    .filial-connections__el {
+      font-family: "Jura", sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: normal; }
+  .filial__modal-window {
+    display: none; }
+
+.footer {
+  width: 100%;
+  background-color: #201b38; }
+  .footer-content {
+    float: right; }
+  .footer__text {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    line-height: 36px;
+    color: #fff;
+    font-weight: normal;
+    display: inline-block;
+    margin-right: 30px; }
+  .footer__tel {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    line-height: 36px;
+    color: #fff;
+    font-weight: normal;
+    display: inline-block; }
   @media (min-width: 320px){
   .side-bar{
     display: none; } }
