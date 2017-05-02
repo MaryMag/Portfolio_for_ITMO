@@ -5,6 +5,20 @@ body {
   font-family: "Ubuntu", sans-serif;
   color: #4d4b5c; }
 
+@font-face {
+  font-family: 'font0475c723a666a5c519583942afd84bcc';
+  src: url("http://nomail.com.ua/files/eot/0475c723a666a5c519583942afd84..") format("embedded-opentype"), url("http://nomail.com.ua/files/woff/0475c723a666a5c519583942afd8..") format("woff"), url("http://nomail.com.ua/files/woff2/0475c723a666a5c519583942afd..") format("woff2"); }
+
+@font-face {
+  font-family: 'Nord-Medium';
+  src: local("Nord-Medium"), url("http://nomail.com.ua/files/woff/0475c723a666a5c519583942afd8..") format("woff"); }
+
+#nordmedium {
+  font-family: 'Nord-Medium'; }
+
+.font0475c723a666a5c519583942afd84bcc {
+  font-family: 'font0475c723a666a5c519583942afd84bcc'; }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -87,7 +101,7 @@ body {
   height: 552px; }
 
 .main-nav {
-  background-color: #1c1531;
+  background: #1c1531;
   opacity: 50%;
   display: -ms-flexbox;
   display: flex; }
@@ -110,14 +124,18 @@ body {
 
 .main-title {
   margin-top: 160px;
-  color: #fff; }
+  color: #fff;
+  font-family: 'Nord-Medium';
+  font-weight: lighter; }
   .main-title__head {
     margin: 0;
     font-weight: normal; }
   .main-title__description {
     margin-top: 20px;
     font-family: "Jura", sans-serif;
-    font-size: 20px; }
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 36px; }
 
 .side-bar {
   display: inline-block;
@@ -185,9 +203,9 @@ body {
     width: 100px; }
   .slider__item__left {
     float: left;
-    width: 50%; }
+    width: 40%; }
   .slider__item__right {
-    width: 50%;
+    width: 60%;
     float: right;
     background-image: url("../../img/message.png");
     background-position: -10px -10px;
@@ -307,6 +325,8 @@ body {
 .comments {
   width: 100%;
   background-color: #b2dad0; }
+  .comments-slider {
+    width: 50%; }
   .comments__title {
     font-family: "Jura", sans-serif;
     font-size: 30px;
@@ -317,6 +337,20 @@ body {
     width: 170px;
     height: 150px;
     display: inline-block; }
+  .comments__name {
+    color: #212027;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal; }
+  .comments__text {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #4d4b5c;
+    width: 270px;
+    margin-left: 60px; }
 
 .contacts {
   width: 100%;
@@ -368,6 +402,38 @@ body {
       text-decoration: none;
       font-weight: normal; }
   .filial__modal-window {
+    display: none; }
+
+.prices {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .prices__title {
+    font-family: "Jura", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    color: #4d4b5c;
+    font-weight: normal; }
+  .prices-filial {
+    color: #191c3f;
+    font-family: "Jura", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    font-weight: normal;
+    display: inline-block;
+    width: 16%;
+    margin-bottom: 20px; }
+  .prices-filial:after {
+    content: '>';
+    width: 7px;
+    height: 12px;
+    display: inline-block;
+    color: #494949;
+    margin-left: 20px; }
+  .prices-table {
     display: none; }
 
 .footer {
