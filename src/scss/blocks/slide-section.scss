@@ -1,15 +1,50 @@
 .slide-section {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
 
-  &__row {}
+  &__row {
+    display: inline-block;
+    width: 100%;
+    // position: relative;
+        
+  }
 
-  &__info {}
+  &__info {
+
+  }
 
   &__title {
     color: #201c38;
     font-family: $font-p;
     font-size: 30px;
     line-height: 36px;
+
+    @media ( max-width: $screen-xs){
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 
+    &__visual{
+    display: inline-block;
+    float: right;
+    width: 45%;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+  }
 
+  &__img{
+    display: inline-block;
+    float: right;
+    width: 570px;
+    height: 521px;
+  }
+
+  &__photo{
+    width: 570px;
+    height: 521px;
+    display: inline-block;
+  }
 }

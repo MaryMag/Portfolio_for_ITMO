@@ -1,0 +1,96 @@
+.prices{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &__title{
+    font-family: $font-p;
+    font-size: 30px;
+    line-height: 30px;
+    color: #4d4b5c;
+    font-weight: normal;
+
+    @media ( max-width: $screen-xs){
+      font-size: 20px;
+    }
+  }
+
+  &-filial{
+    color: #191c3f;
+    font-family: $font-p;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    font-weight: normal;
+    display: inline-block;
+    // width: 16%;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    @media ( max-width: $screen-xs){
+      font-size: 12px;
+      // display: block;
+      // width: 100%;
+    }
+
+    &--active{
+      color: #89c1a1;
+    }
+  
+    &:after{
+      content:'>';
+      width: 7px;
+      height: 12px;
+      line-height: 24px;
+      display: inline-block;
+      color: #494949;
+      margin-left: 15px;
+      vertical-align: top;
+    }
+
+    &--active:after{
+      transform: rotate(90deg);
+      color: #89c1a1;
+      vertical-align: middle;
+    }
+}
+
+  &-table{
+    // display: none;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+
+    @media ( max-width: $screen-xs){
+      font-size: 12px;
+    }
+  }
+
+  &-table td{
+    // border-bottom: 1px solid #000;
+    padding: 25px;
+  }
+
+  &__more{
+    margin-top: 20px;
+    color: #201c38;
+    font-family: $font-h;
+    font-size: 16px;
+
+    @media ( max-width: $screen-xs){
+      font-size: 12px;
+    }
+  }
+
+}
+
+.accordion{
+  // display: inline-block;
+}
+
+.accordion dt{
+  display: inline-block;
+  // overflow: hidden;
+}

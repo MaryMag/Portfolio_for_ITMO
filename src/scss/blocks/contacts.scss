@@ -1,0 +1,24 @@
+.contacts{
+  width: 100%;
+  background-image: url("../../img/fon_contacts.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+
+  webkit-background-size: cover;
+  background-size: cover;
+  // background-color: #201d39;
+
+  &__title{
+    font-family: $font-p;
+    font-size: 30px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: normal;
+    margin-top: 60px;
+    margin-bottom: 70px;
+
+    @media ( max-width: $screen-xs){
+      font-size: 20px;
+    }
+  }
+}

@@ -1,8 +1,40 @@
 .side-bar {
+  display: inline-block;
+  float: right;
+  background-color: #1c1531;
+  opacity: 50%;
+  // height: 100%;
+ // width: 100%; 
+  // width: 540px;
+  transform: rotate(-90deg);
+
+  position: absolute;
+  // position: fixed;
+  // bottom: 0;
+  top: 50%;
+  right: 0;
+  // right: -15%;
+  // margin-right: 0;
+  // margin-bottom: 0;
+
 
   &__link {
     font-family: $font-h;
     font-size: 16px;
     line-height: 36px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
   }
+
+
+  @media ( min-width: $screen-xs) {
+    display: none;
+  }
+
+  @media ( min-width: $screen-sm) {
+    display: block;
+  }
+
 }

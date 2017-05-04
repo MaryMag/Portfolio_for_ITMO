@@ -1,0 +1,12 @@
+.fact-section{
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #89c1a1;
+  display: flex;
+
+  &__title{
+    font-family: $font-p;
+    font-size: 30px;
+    margin-bottom: 0;
+    
+  }
+}

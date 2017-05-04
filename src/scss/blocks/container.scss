@@ -1,0 +1,10 @@
+.container {
+   // min-width: 1200px;
+   width: 1170px;
+   margin: 0 auto;
+   overflow: hidden;
+
+   @media ( max-width: $screen-xs){
+      padding: 0 5px;
+    }
+}

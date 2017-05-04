@@ -1,12 +1,29 @@
 .main-title {
+  margin-top: 160px;
+  color: #fff;
+  font-family:'Nord-Medium';
+  font-weight: lighter;
 
-
-  &__head {}
+  &__head {
+    margin: 0;
+    font-weight: normal;
+  }
 
 
   &__description {
+    margin-top: 20px;
     font-family: $font-p;
     font-size: 20px;
+    font-weight: normal;
     line-height: 36px;
+    // margin-bottom: 375px;
+  }
+
+  @media ( max-width: $screen-sm) {
+    margin-left: 70px;
+  }
+
+  @media ( max-width: $screen-xs) {
+    margin-left: 0;
   }
 }
