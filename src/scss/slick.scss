@@ -98,12 +98,21 @@
 }
 
 // my slyte
-.slisk-dots li button{
-    display: inline-block;
-    background-color: #b2dad0;
-}
+// .slick-dots li button{
+//     display: inline-block;
+//     background-color: #b2dad0;
+// }
+
+// .slick-prev{
+//     display: none;
+// }
 
 .slick-next{
+    display: none;
+    outline: none;
+}
+
+.slick-next:after{
     display: inline-block;
     float: right;
     content:'A';

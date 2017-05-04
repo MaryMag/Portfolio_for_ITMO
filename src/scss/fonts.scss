@@ -2,8 +2,11 @@
 //   font-family: ...;
 //   src:url();
 // }
-@font-face{font-family:'font0475c723a666a5c519583942afd84bcc'; 
-src:url('http://nomail.com.ua/files/eot/0475c723a666a5c519583942afd84..') format('embedded-opentype'), 
-url('http://nomail.com.ua/files/woff/0475c723a666a5c519583942afd8..') format('woff'), 
-url('http://nomail.com.ua/files/woff2/0475c723a666a5c519583942afd..') format('woff2');}@font-face{font-family:'Nord-Medium';src:local('Nord-Medium'), 
-url('http://nomail.com.ua/files/woff/0475c723a666a5c519583942afd8..') format('woff');}#nordmedium{font-family:'Nord-Medium';}.font0475c723a666a5c519583942afd84bcc{font-family:'font0475c723a666a5c519583942afd84bcc';}
+// @font-face{
+//   font-family:'font0475c723a666a5c519583942afd84bcc'; 
+// src:url('http://nomail.com.ua/files/eot/0475c723a666a5c519583942afd84bcc') format('embedded-opentype'), 
+// url('http://nomail.com.ua/files/woff/0475c723a666a5c519583942afd8bcc') format('woff'), 
+// url('http://nomail.com.ua/files/woff2/0475c723a666a5c519583942afdbcc') format('woff2');}
+
+@font-face{font-family:'Nord-Medium';src:local('Nord-Medium'), 
+url('http://nomail.com.ua/files/woff/0475c723a666a5c519583942afd8bcc') format('woff');}#nordmedium{font-family:'Nord-Medium';}.font0475c723a666a5c519583942afd84bcc{font-family:'font0475c723a666a5c519583942afd84bcc';}
