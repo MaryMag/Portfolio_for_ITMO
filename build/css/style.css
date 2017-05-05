@@ -84,18 +84,6 @@ body {
 .slick-arrow.slick-hidden {
   display: none; }
 
-.slick-next {
-  display: none;
-  outline: none; }
-
-.slick-next:after {
-  display: inline-block;
-  float: right;
-  content: 'A';
-  color: #03eaa5;
-  font-size: 56px;
-  font-weight: bold; }
-
 /* Slider */
 .slick-loading .slick-list {
   background: #fff url("./ajax-loader.gif") center center no-repeat; }
@@ -330,13 +318,13 @@ body {
     display: inline-block; }
 
 .slider-place {
-  width: 50%;
+  width: 55%;
   display: inline-block; }
 
 .slider-wrapper {
-  width: 420px;
+  width: 500px;
   display: inline-block;
-  float: left; }
+  margin-left: 60px; }
 
 .slider__item {
   color: #201c38;
@@ -345,7 +333,8 @@ body {
   line-height: 30px;
   display: block;
   width: 100px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 0 50px; }
 
 .slider__item__left {
   float: left;
@@ -359,6 +348,34 @@ body {
   background-repeat: no-repeat;
   display: inline-block;
   vertical-align: top; }
+
+.slick-prev {
+  display: none;
+  outline: none; }
+
+.slick-prev:after {
+  display: inline-block;
+  float: right;
+  content: 'A';
+  color: #03eaa5;
+  font-size: 56px;
+  font-weight: bold;
+  transform: rotate(-90deg);
+  margin-right: 20px; }
+
+.slick-next {
+  display: none;
+  outline: none; }
+
+.slick-next:after {
+  display: inline-block;
+  float: right;
+  content: 'A';
+  color: #03eaa5;
+  font-size: 56px;
+  font-weight: bold;
+  transform: rotate(90deg);
+  margin-left: 70px; }
 
 .container {
   width: 1170px;
@@ -481,7 +498,7 @@ body {
   display: flex;
   padding-top: 0; }
   .comments-slider {
-    width: 50%; }
+    width: 100%; }
   .comments__title {
     font-family: "Jura", sans-serif;
     font-size: 30px;

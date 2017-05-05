@@ -1,10 +1,21 @@
 $(document).ready(function(){
   // весь ваш код
-  $('.slider').slick({dots: true });
+  $('.slider').slick({
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true, 
+    speed: 300,
+    autoplay: true, 
+    autoplaySpeed: 3000});
 
-  $('.comments-slider').slick({infinite: true,
-  slidesToShow: 2,
-  slidesToScroll: 2});
+  $('.comments-slider').slick({
+    dots: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    speed: 300,
+    autoplay: true, 
+    autoplaySpeed: 3000});
 
   $('.accordion dd').hide(); 
   $('.accordion dd:eq(0)').show(); 

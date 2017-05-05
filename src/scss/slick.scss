@@ -106,17 +106,3 @@
 // .slick-prev{
 //     display: none;
 // }
-
-.slick-next{
-    display: none;
-    outline: none;
-}
-
-.slick-next:after{
-    display: inline-block;
-    float: right;
-    content:'A';
-    color: #03eaa5;
-    font-size: 56px;
-    font-weight: bold;
-}
