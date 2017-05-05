@@ -1,8 +1,8 @@
 .side-bar {
   display: block;
   // float: right;
-  background-color: #1c1531;
-  opacity: 50%;
+  // background-color: #1c1531;
+  background: rgba(28, 21, 49, 0.5);
   height: 550px;
   width: 40px;
   overflow: hidden;
@@ -20,23 +20,31 @@
 
 
   &__link {
+    display: inline-block;
     font-family: $font-h;
     font-size: 16px;
-    line-height: 36px;
+    // line-height: 36px;
     color: #fff;
-    text-align: left;
-    vertical-align: middle;
-    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 300px;
+    margin-left: -30px;
+    // margin-right: -10px;
+    // margin-right: 10px;
+    // float: left;
+    // overflow: hidden;
+    // vertical-align: top;
+    // text-align: left;
+    // vertical-align: middle;
     transform: rotate(-90deg);
   }
 
 
-  @media ( min-width: $screen-xs) {
-    display: none;
-  }
+  // @media ( min-width: $screen-xs) {
+  //   display: none;
+  // }
 
-  @media ( min-width: $screen-sm) {
-    display: block;
-  }
+  // @media ( min-width: $screen-sm) {
+  //   display: block;
+  // }
 
 }

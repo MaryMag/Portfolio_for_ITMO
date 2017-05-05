@@ -7,7 +7,7 @@ $(document).ready(function(){
     infinite: true, 
     speed: 300,
     autoplay: true, 
-    autoplaySpeed: 3000});
+    autoplaySpeed: 4000});
 
   $('.comments-slider').slick({
     dots: true,
@@ -15,7 +15,9 @@ $(document).ready(function(){
     slidesToScroll: 1,
     speed: 300,
     autoplay: true, 
-    autoplaySpeed: 3000});
+    autoplaySpeed: 4000});
+
+  // $('.comments-slider').find('sli')
 
   $('.accordion dd').hide(); 
   $('.accordion dd:eq(0)').show(); 

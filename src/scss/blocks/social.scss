@@ -1,10 +1,13 @@
 .social {
   display: inline-block;
   color: #fff;
-  &--vk {}
-  float: right;
-  margin-right: 40px;
-  vertical-align: middle;
-  // transform: rotate(90deg);
   text-align: center;
+  margin-left: 12px;
+  // float: right;
+  &--vk {}
+  // float: right;
+  // margin-right: 40px;
+  // vertical-align: middle;
+  // transform: rotate(90deg);
+  // text-align: center;
 }

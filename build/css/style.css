@@ -7,8 +7,12 @@ body {
   color: #4d4b5c; }
 
 @font-face {
+  font-family: 'font0475c723a666a5c519583942afd84bcc';
+  src: url("http://nomail.com.ua/files/eot/0475c723a666a5c519583942afd84bcc.eot?#iefix") format("embedded-opentype"), url("http://nomail.com.ua/files/woff/0475c723a666a5c519583942afd84bcc.woff") format("woff"), url("http://nomail.com.ua/files/woff2/0475c723a666a5c519583942afd84bcc.woff2") format("woff2"); }
+
+@font-face {
   font-family: 'Nord-Medium';
-  src: local("Nord-Medium"), url("http://nomail.com.ua/files/woff/0475c723a666a5c519583942afd8bcc") format("woff"); }
+  src: local("Nord-Medium"), url("http://nomail.com.ua/files/woff/0475c723a666a5c519583942afd84bcc.woff") format("woff"); }
 
 #nordmedium {
   font-family: 'Nord-Medium'; }
@@ -226,8 +230,7 @@ body {
   height: 552px; }
 
 .main-nav {
-  background: #1c1531;
-  opacity: 50%;
+  background: rgba(28, 21, 49, 0.5);
   display: -ms-flexbox;
   display: flex; }
   .main-nav__list {
@@ -264,8 +267,7 @@ body {
 
 .side-bar {
   display: block;
-  background-color: #1c1531;
-  opacity: 50%;
+  background: rgba(28, 21, 49, 0.5);
   height: 550px;
   width: 40px;
   overflow: hidden;
@@ -273,22 +275,20 @@ body {
   top: 0;
   right: 0; }
   .side-bar__link {
+    display: inline-block;
     font-family: "Ubuntu", sans-serif;
     font-size: 16px;
-    line-height: 36px;
     color: #fff;
-    text-align: left;
-    vertical-align: middle;
-    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 300px;
+    margin-left: -30px;
     transform: rotate(-90deg); }
 
 .social {
   display: inline-block;
   color: #fff;
-  float: right;
-  margin-right: 40px;
-  vertical-align: middle;
-  text-align: center; }
+  text-align: center;
+  margin-left: 12px; }
 
 .slide-section {
   width: 100%;
@@ -338,16 +338,17 @@ body {
 
 .slider__item__left {
   float: left;
-  width: 40%; }
+  width: 35%; }
 
 .slider__item__right {
-  width: 60%;
+  width: 65%;
   float: right;
   background-image: url("../../img/message.png");
   background-position: -10px -10px;
   background-repeat: no-repeat;
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: top;
+  overflow: hidden; }
 
 .slick-prev {
   display: none;
@@ -376,6 +377,14 @@ body {
   font-weight: bold;
   transform: rotate(90deg);
   margin-left: 70px; }
+
+.comments-slider .slick-dots li {
+  width: 15px;
+  height: 15px;
+  background-color: #f7f7f7; }
+
+.comments-slider .slick-dots li.slick-active {
+  background-color: #2f4159; }
 
 .container {
   width: 1170px;
@@ -522,7 +531,30 @@ body {
     font-weight: normal;
     color: #4d4b5c;
     width: 270px;
-    margin-left: 60px; }
+    margin-left: 45px; }
+
+.comments-slider .slick-next:after {
+  display: none;
+  outline: none; }
+
+.comments-slider .slick-next:before {
+  display: none;
+  outline: none; }
+
+.comments-slider .slick-arrow {
+  display: none;
+  outline: none; }
+
+.slick-dots li {
+  width: 15px;
+  height: 15px;
+  background-color: #b2dad0; }
+
+.slick-dots li.slick-active {
+  background-color: #03eaa5; }
+
+.slick-dots li button:before {
+  display: none; }
 
 .contacts {
   width: 100%;
@@ -616,12 +648,14 @@ body {
       color: #89c1a1;
       vertical-align: middle; }
   .prices-table {
-    border: 1px solid #000;
     display: inline-block;
     text-align: center;
     margin-bottom: 20px;
-    display: -ms-flexbox;
-    display: flex; }
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    border-collapse: collapse; }
+  .prices table, .prices th, .prices td {
+    border: 1px solid black; }
   .prices-table td {
     padding: 25px; }
   .prices__more {
@@ -655,12 +689,6 @@ body {
     color: #fff;
     font-weight: normal;
     display: inline-block; }
-  @media (min-width: 320px){
-  .side-bar{
-    display: none; } }
-  @media (min-width: 768px){
-  .side-bar{
-    display: block; } }
   @media (max-width: 320px){
   .main-nav__list{
     overflow: hidden;

@@ -28,17 +28,18 @@
 
   &__item__left{
     float: left;
-    width: 40%;
+    width: 35%;
   }
 
   &__item__right{
-    width: 60%;
+    width: 65%;
     float: right;
     background-image: url("../../img/message.png");
     background-position: -10px -10px;
-  background-repeat: no-repeat;
+    background-repeat: no-repeat;
     display: inline-block;
     vertical-align: top;
+    overflow: hidden;
   }
 }
 
@@ -79,3 +80,16 @@
     margin-left: 70px;
 }
 
+.comments-slider .slick-dots li{
+  width: 15px;
+  height: 15px;
+  background-color: #f7f7f7;
+}
+
+// .slick-dots li .slick-active{
+//   background-color: #fff;
+// }
+
+.comments-slider .slick-dots li.slick-active {
+  background-color: #2f4159;
+}
