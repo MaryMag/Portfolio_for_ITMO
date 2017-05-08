@@ -1,13 +1,24 @@
 .header {
   // background-color: #acd6c4;
-  background-image: url("../img/fon1.jpg");
-  background-position: 0 -100px;
+  background-image: url("../img/fon_xs.jpg");
   background-repeat: no-repeat;
-
+  // background-position: 0 -20px;
   webkit-background-size: cover;
   background-size: cover;
   width: 100%;
   position: relative;
-  height: 552px;
+  height: 500px;
+
+  @media (min-width: $screen-sm){
+    background-image: url("../img/fon_sm.jpg");
+    background-position: 0 -20px;
+    height: 552px;
+  }
+
+  @media (min-width: $screen-md){
+    background-image: url("../img/fon1.jpg");
+    background-position: 0 -80px;
+    height: 552px;
+  }
 
 }

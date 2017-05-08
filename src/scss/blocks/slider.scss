@@ -1,12 +1,23 @@
 .slider-place{
-  width: 55%;
+  width: 100%;
   display: inline-block;
+
+  @media ( min-width: $screen-sm){
+    width: 55%;
+  }
 }
 
 .slider-wrapper{
-    width: 500px;
+    width: 90%;
     display: inline-block;
-    margin-left: 60px;
+    margin-left: 0;
+
+
+    @media ( min-width: $screen-sm){
+      margin-left: 90px;
+      // width: 50%;
+    }
+    
     // float: left;
     // width: 200px;
 }
@@ -14,16 +25,29 @@
 .slider {
   // width: 45%;
   // overflow: hidden;
+  z-index: 1;
 
   &__item {
-    color: #201c38;
+    color: #fff;
     font-family: $font-h;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 12px;
+    line-height: 20px;
     display: block;
     width: 100px;
     overflow: hidden;
-    margin: 0 50px;
+    margin-bottom: 50px;
+    // margin: 0 40px;
+    // width: 240px;
+
+    @media ( min-width: $screen-sm){
+      color: #201c38;
+    }
+
+    @media ( min-width: $screen-md){
+      width: 400px;
+      font-size: 16px;
+      line-height: 30px;
+    }
   }
 
   &__item__left{
@@ -52,6 +76,9 @@
 }
 
 .slick-prev:after{
+  display: none;
+
+  @media ( min-width: $screen-sm){
     display: inline-block;
     float: right;
     content:'A';
@@ -59,8 +86,8 @@
     font-size: 56px;
     font-weight: bold;
     transform:rotate(-90deg);
-    margin-right: 20px;
-
+    // margin-right: 45px;
+  }
 }
 
 
@@ -70,6 +97,9 @@
 }
 
 .slick-next:after{
+  display: none;
+
+  @media ( min-width: $screen-sm){
     display: inline-block;
     float: right;
     content:'A';
@@ -77,13 +107,25 @@
     font-size: 56px;
     font-weight: bold;
     transform:rotate(90deg);
-    margin-left: 70px;
+    // margin-left: 100px;
+  }
+}
+
+.slick-dots {
+  display: inline-block;
+  text-align: left;
+  // margin-top: 60px;
+}
+
+.slick-dots li{
+  margin: 0 15px;
 }
 
 .comments-slider .slick-dots li{
   width: 15px;
   height: 15px;
   background-color: #f7f7f7;
+  // margin-right: 25px;
 }
 
 // .slick-dots li .slick-active{

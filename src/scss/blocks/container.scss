@@ -1,11 +1,17 @@
 .container {
    // min-width: 1200px;
-   width: 1170px;
+   // width: 315px;
+   width: 95%;
    margin: 0 auto;
    overflow: hidden;
    border: 2px solid #000;
+   // padding-left: 10px;
 
-   @media ( max-width: $screen-xs){
-      padding: 0 5px;
+   @media ( min-width: $screen-md){}
+
+   @media ( min-width: $screen-md){
+      // width: 293px;
+      // margin: 0 auto;
+      width: 1170px;
     }
 }

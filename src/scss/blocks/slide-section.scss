@@ -2,34 +2,72 @@
   width: 100%;
   overflow: hidden;
   display: flex;
+  background-image: url("../img/fon_legend.jpg");
+  background-position: 0 -100px;
+  background-repeat: no-repeat;
+  webkit-background-size: cover;
+  background-size: cover;
+
+  @media ( min-width: $screen-sm){
+    background: #eaeaec;
+  }
+
 
   &__row {
     display: inline-block;
     width: 100%;
-    // position: relative;
+    height: 400px;
+
+    @media ( min-width: $screen-sm){
+      height: 521px;
+      position: relative;
+    }
+    // 
         
   }
 
   &__info {
-
+    position: relative;
   }
 
   &__title {
-    color: #201c38;
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
     font-family: $font-p;
-    font-size: 30px;
-    line-height: 36px;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-weight: normal;
 
-    @media ( max-width: $screen-xs){
+    @media ( min-width: $screen-sm){
+      display: inline-block;
+      width: 45%;
       font-size: 20px;
-      line-height: 20px;
+      line-height: 24px;
+      color: #201c38;
+      margin-bottom: 100px;
+    }
+
+    @media ( min-width: $screen-md){
+      font-size: 30px;
+      line-height: 36px;
     }
   }
 
     &__visual{
-    display: inline-block;
-    float: right;
-    width: 45%;
+      display: none;
+     
+      @media ( min-width: $screen-sm){
+        display: inline-block;
+        // float: right;
+        width: 45%;
+        margin-top: 0;
+        vertical-align: top;
+        position: absolute;
+        top: 0;
+        // z-index: -1;
+      }
     // position: absolute;
     // top: 0;
     // right: 0;
@@ -38,8 +76,14 @@
   &__img{
     display: inline-block;
     float: right;
+    width: 364px;
+    height: 344px;
+
+
+    @media ( min-width: $screen-md){
     width: 570px;
     height: 521px;
+    }
   }
 
   &__photo{

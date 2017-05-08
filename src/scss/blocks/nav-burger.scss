@@ -1,5 +1,19 @@
 .nav-burger {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  // border: 1px solid #fff;
+  margin-top: 10px;
+  background-image: url("../img/polosi.png");
 
 
-  &__lines{}
+
+  &--krest{
+    background-image: url("../img/krest.png");
+  }
+
+  @media (min-width: $screen-sm){
+    display: none;
+  }
 }

@@ -1,55 +1,85 @@
 .main-nav {
-  background: rgba(28, 21, 49, 0.5);
-  display: flex;
+    display: block;
+    margin-top: 0;
+    padding-left: 10px;
+    z-index: 1;
+    @media (min-width: $screen-sm){
+      padding-left: 0px;
+    }
+    // height: 500px;
+
+
+  @media (min-width: $screen-sm){
+    display: flex;
+    margin-top: 20px;
+  }
 
   &__list {
+    display: none;
+    padding: 0;
+    background: rgba(28, 21, 49, 0.5);
+
+    @media (min-width: $screen-sm){
+  //     display: inline-block;
+  //     width: 100%;
+  //   }
+  // @media (min-width: $screen-sm){
     padding-left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
 
-    @media ( max-width: $screen-xs){
-      overflow: hidden;
-      display: block;
-      margin-top: 120px;
+    @media (min-width: $screen-md){
+      justify-content: space-around;
     }
+
+  //   @media ( max-width: $screen-xs){
+  //     overflow: hidden;
+  //     display: block;
+  //     margin-top: 120px;
+  //   }
   }
 
 
   &__item {
     display: inline-block;
     // justify-content: flex-end;
-    @media ( max-width: $screen-xs){
-      float: left;
-      display: block;
-      width: 100%;
-    }
+    // @media ( max-width: $screen-xs){
+    //   float: left;
+    //   display: block;
+    //   width: 100%;
+    // }
   }
 
 
   &__link {
     text-decoration: none;
     font-family: $font-p;
-    font-style: 16px;
+    font-size: 14px;
     line-height: 36px;
     color: #fff;
-    margin: 24px 0;
+    // margin: 24px 0;
 
-    @media ( max-width: $screen-xs){
-      text-align: center;
+    @media (min-width: $screen-sm){
+      font-size: 16px;
     }
-  }
 
-  @media ( max-width: $screen-xs) {
-    margin-left: 0;
-    float: left;
-    background-color: #1c1531;
-    // background-position: -15px 0;
-    margin-left: -5px;
-    display: block;
-    width: 137px;
-    height: 450px;
-    overflow: hidden;
-  }
+  //   @media ( max-width: $screen-xs){
+  //     text-align: center;
+  //   }
+  // }
 
-}
+  // @media ( max-width: $screen-xs) {
+  //   margin-left: 0;
+  //   float: left;
+  //   background-color: #1c1531;
+  //   // background-position: -15px 0;
+  //   margin-left: -5px;
+  //   display: block;
+  //   width: 137px;
+  //   height: 500px;
+  //   overflow: hidden;
+  // }
+
+}}
