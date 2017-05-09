@@ -3,7 +3,7 @@
   overflow: hidden;
   display: flex;
   background-image: url("../img/fon_legend.jpg");
-  background-position: 0 -100px;
+  // background-position: 0 -100px;
   background-repeat: no-repeat;
   webkit-background-size: cover;
   background-size: cover;
@@ -12,6 +12,9 @@
     background: #eaeaec;
   }
 
+  @media ( min-width: $screen-md){
+    background: #fff;
+  }
 
   &__row {
     display: inline-block;
@@ -42,7 +45,7 @@
 
     @media ( min-width: $screen-sm){
       display: inline-block;
-      width: 45%;
+      width: 50%;
       font-size: 20px;
       line-height: 24px;
       color: #201c38;
@@ -61,7 +64,7 @@
       @media ( min-width: $screen-sm){
         display: inline-block;
         // float: right;
-        width: 45%;
+        width: 50%;
         margin-top: 0;
         vertical-align: top;
         position: absolute;
@@ -76,13 +79,14 @@
   &__img{
     display: inline-block;
     float: right;
-    width: 364px;
-    height: 344px;
+    width: 100%;
+    // width: 364px;
+    // height: 344px;
 
 
     @media ( min-width: $screen-md){
-    width: 570px;
-    height: 521px;
+    // width: 570px;
+    // height: 521px;
     }
   }
 

@@ -141,7 +141,7 @@ body {
     -moz-osx-font-smoothing: grayscale; }
 
 .slick-prev {
-  left: -70px; }
+  left: -12%; }
   [dir="rtl"] .slick-prev {
     left: auto;
     right: -25px; }
@@ -151,7 +151,7 @@ body {
       content: "→"; }
 
 .slick-next {
-  right: -70px; }
+  right: -8%; }
   [dir="rtl"] .slick-next {
     left: -25px;
     right: auto; }
@@ -314,7 +314,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   background-image: url("../img/fon_legend.jpg");
-  background-position: 0 -100px;
   background-repeat: no-repeat;
   webkit-background-size: cover;
   background-size: cover; }
@@ -338,8 +337,7 @@ body {
   .slide-section__img {
     display: inline-block;
     float: right;
-    width: 364px;
-    height: 344px; }
+    width: 100%; }
   .slide-section__photo {
     width: 570px;
     height: 521px;
@@ -364,7 +362,8 @@ body {
     display: block;
     width: 100px;
     overflow: hidden;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    width: 293px; }
   .slider__item__left {
     float: left;
     width: 35%; }
@@ -377,6 +376,9 @@ body {
     display: inline-block;
     vertical-align: top;
     overflow: hidden; }
+
+.slick-prev:before, .slick-next:before {
+  display: none; }
 
 .slick-prev {
   display: none;
@@ -397,15 +399,16 @@ body {
   text-align: left; }
 
 .slick-dots li {
-  margin: 0 15px; }
-
-.comments-slider .slick-dots li {
   width: 15px;
   height: 15px;
-  background-color: #f7f7f7; }
+  background-color: #f7f7f7;
+  margin: 0 10px; }
 
 .comments-slider .slick-dots li.slick-active {
   background-color: #2f4159; }
+
+.slick-list {
+  width: 100%; }
 
 .container {
   width: 95%;
@@ -743,22 +746,22 @@ body {
     position: relative; }
   .slide-section__title{
     display: inline-block;
-    width: 45%;
+    width: 50%;
     font-size: 20px;
     line-height: 24px;
     color: #201c38;
     margin-bottom: 100px; }
   .slide-section__visual{
     display: inline-block;
-    width: 45%;
+    width: 50%;
     margin-top: 0;
     vertical-align: top;
     position: absolute;
     top: 0; }
   .slider-place{
-    width: 55%; }
+    width: 50%; }
   .slider-wrapper{
-    margin-left: 90px; }
+    margin-left: 50px; }
   .slider__item{
     color: #201c38; }
   .slick-prev:after{
@@ -766,17 +769,23 @@ body {
     float: right;
     content: 'A';
     color: #03eaa5;
-    font-size: 56px;
+    font-size: 37px;
     font-weight: bold;
-    transform: rotate(-90deg); }
+    transform: rotate(-90deg);
+    vertical-align: middle; }
   .slick-next:after{
     display: inline-block;
     float: right;
     content: 'A';
     color: #03eaa5;
-    font-size: 56px;
+    font-size: 37px;
     font-weight: bold;
-    transform: rotate(90deg); } }
+    transform: rotate(90deg); }
+  .slick-dots li{
+    width: 10px;
+    height: 10px; }
+  .slick-list{
+    width: 80%; } }
   @media (min-width: 1280px){
   .header{
     background-image: url("../img/fon1.jpg");
@@ -788,16 +797,21 @@ body {
   .side-bar{
     display: inline-block;
     height: 552px; }
+  .slide-section{
+    background: #fff; }
   .slide-section__title{
     font-size: 30px;
     line-height: 36px; }
-  .slide-section__img{
-    width: 570px;
-    height: 521px; }
+  .slider-wrapper{
+    margin-left: 80px; }
   .slider__item{
     width: 400px;
     font-size: 16px;
     line-height: 30px; }
+  .slick-prev:after{
+    font-size: 56px; }
+  .slick-next:after{
+    font-size: 56px; }
   .container{
     width: 1170px; } }
   @media (max-width: 320px){
