@@ -6,43 +6,72 @@
   padding-top: 0;;
 
   &-slider{
-    width: 100%;
+    width: 97%;
   }
 
   &__title{
     font-family: $font-p;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 20px;
+    // line-height: 30px;
     font-weight: normal;
     color: #212027;
 
-    @media ( max-width: $screen-xs){
-      font-size: 20px;
+    @media ( min-width: $screen-md){
+      font-size: 30px;
     }
   }
 
   &__img{
-    width: 170px;
-    height: 150px;
+    width: 60px;
+    height: 60px;
     display: inline-block;
+
+    @media ( min-width: $screen-sm){
+      width: 105px;
+      height: 95px;
+    }
+
+    @media ( min-width: $screen-md){
+      width: 170px;
+      height: 150px;
+    }
   }
 
   &__name{
     color: #212027;
     font-family: $font-h;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 10px;
+    line-height: 14px;
     font-weight: normal;
+    width: 60px;
+
+    @media ( min-width: $screen-sm){
+      width: 100%;
+    }
+
+    @media ( min-width: $screen-md){
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   &__text{
     font-family: $font-h;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 10px;
+    line-height: 14px;
     font-weight: normal;
     color: #4d4b5c;
-    width: 270px;
-    margin-left: 45px;
+    width: 80%;
+    // width: 180px;
+    margin-left: 40px;
+    text-align: right;
+
+    @media ( min-width: $screen-md){
+      font-size: 16px;
+      line-height: 24px;
+      width: 275px;
+    }
+    // margin-left: 45px;
   //   background-image: url("../../img/message.png");
   //   background-position: -10px -10px;
   // background-repeat: no-repeat;

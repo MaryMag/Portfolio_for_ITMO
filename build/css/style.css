@@ -366,9 +366,9 @@ body {
     width: 293px; }
   .slider__item__left {
     float: left;
-    width: 35%; }
+    width: 25%; }
   .slider__item__right {
-    width: 65%;
+    width: 75%;
     float: right;
     background-image: url("../../img/message.png");
     background-position: -10px -10px;
@@ -536,31 +536,32 @@ body {
   display: flex;
   padding-top: 0; }
   .comments-slider {
-    width: 100%; }
+    width: 97%; }
   .comments__title {
     font-family: "Jura", sans-serif;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 20px;
     font-weight: normal;
     color: #212027; }
   .comments__img {
-    width: 170px;
-    height: 150px;
+    width: 60px;
+    height: 60px;
     display: inline-block; }
   .comments__name {
     color: #212027;
     font-family: "Ubuntu", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: normal; }
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: normal;
+    width: 60px; }
   .comments__text {
     font-family: "Ubuntu", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 10px;
+    line-height: 14px;
     font-weight: normal;
     color: #4d4b5c;
-    width: 270px;
-    margin-left: 45px; }
+    width: 80%;
+    margin-left: 40px;
+    text-align: right; }
 
 .comments-slider .slick-next:after {
   display: none;
@@ -817,7 +818,12 @@ body {
   .map{
     display: inline-block;
     width: 50%;
-    float: left; } }
+    float: left; }
+  .comments__img{
+    width: 105px;
+    height: 95px; }
+  .comments__name{
+    width: 100%; } }
   @media (min-width: 1280px){
   .header{
     background-image: url("../img/fon1.jpg");
@@ -876,10 +882,20 @@ body {
     width: 15px;
     height: 15px; }
   .map-img{
-    height: 531px; } }
-  @media (max-width: 320px){
+    height: 531px; }
   .comments__title{
-    font-size: 20px; }
+    font-size: 30px; }
+  .comments__img{
+    width: 170px;
+    height: 150px; }
+  .comments__name{
+    font-size: 16px;
+    line-height: 24px; }
+  .comments__text{
+    font-size: 16px;
+    line-height: 24px;
+    width: 275px; } }
+  @media (max-width: 320px){
   .contacts__title{
     font-size: 20px; }
   .filial__title{

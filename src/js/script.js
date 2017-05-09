@@ -11,7 +11,7 @@ $(document).ready(function(){
 
   $('.comments-slider').slick({
     dots: true,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     speed: 300,
     autoplay: true, 
