@@ -145,6 +145,11 @@
     width: 10px;
     height: 10px;
   }
+
+  @media ( min-width: $screen-md){
+    width: 15px;
+    height: 15px;
+  }
 }
 
 .comments-slider .slick-dots li{
