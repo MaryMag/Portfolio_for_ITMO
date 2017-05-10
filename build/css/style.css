@@ -615,22 +615,23 @@ body {
   display: -ms-flexbox;
   display: flex;
   webkit-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  padding-bottom: 60px; }
   .contacts__title {
     font-family: "Jura", sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 24px;
     color: #fff;
     font-weight: normal;
-    margin-top: 60px;
-    margin-bottom: 70px; }
+    margin-top: 44px; }
 
 .filial {
-  width: 16.4%;
-  display: inline-block; }
+  display: inline-block;
+  width: 45%;
+  margin-bottom: 20px; }
   .filial__title {
     font-family: "Jura", sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 24px;
     color: #fff;
     text-decoration: none;
@@ -643,24 +644,93 @@ body {
     background-color: #89c1a1;
     margin-right: 15px; }
   .filial__manager {
-    margin-top: 20px;
-    font-family: "Jura", sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    color: #fff;
-    font-weight: normal; }
+    display: none; }
   .filial-connections {
-    margin-top: 40px;
-    margin-bottom: 140px; }
+    display: none; }
     .filial-connections__el {
+      display: none; }
+  .filial__modal-window {
+    width: 220px;
+    height: 220px;
+    /* Рaзмеры дoлжны быть фиксирoвaны */
+    background: #fff;
+    position: fixed;
+    /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+    top: 45%;
+    /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+    left: 50%;
+    /* пoлoвинa экрaнa слевa */
+    margin-top: -150px;
+    margin-left: -150px;
+    /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+    display: none;
+    /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+    opacity: 0;
+    /* пoлнoстью прoзрaчнo для aнимирoвaния */
+    z-index: 5;
+    /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+    padding: 20px 10px;
+    text-align: left;
+    padding-left: 80px; }
+    .filial__modal-window__title {
       font-family: "Jura", sans-serif;
       font-size: 14px;
       line-height: 24px;
-      color: #fff;
+      color: #000;
+      text-decoration: none; }
+    .filial__modal-window__title:before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      background-color: #89c1a1;
+      margin-right: 15px; }
+    .filial__modal-window__manager {
+      font-family: "Jura", sans-serif;
+      font-size: 12px;
+      line-height: 24px;
+      color: #000; }
+    .filial__modal-window__connections a {
       text-decoration: none;
-      font-weight: normal; }
-  .filial__modal-window {
-    display: none; }
+      font-family: "Jura", sans-serif;
+      font-size: 12px;
+      line-height: 24px;
+      color: #000; }
+    .filial__modal-window__connections--tel {
+      margin-bottom: 30px; }
+
+.close-modal {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  font-weight: normal;
+  color: #000; }
+
+.overlay {
+  z-index: 3;
+  /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+  position: fixed;
+  /* всегдa перекрывaет весь сaйт */
+  background-color: #fff;
+  /* чернaя */
+  opacity: 0.4;
+  /* нo немнoгo прoзрaчнa */
+  -moz-opacity: 0.4;
+  /* фикс прозрачности для старых браузеров */
+  filter: alpha(opacity=80);
+  width: 100%;
+  height: 100%;
+  /* рaзмерoм вo весь экрaн */
+  top: 0;
+  /* сверху и слевa 0, oбязaтельные свoйствa! */
+  left: 0;
+  cursor: pointer;
+  display: none; }
 
 .prices {
   width: 100%;
@@ -856,7 +926,29 @@ body {
   .comments-slider .slick-dots li{
     width: 10px;
     height: 10px;
-    margin-left: 10px; } }
+    margin-left: 10px; }
+  .contacts__title{
+    margin-top: 50px; }
+  .filial__manager{
+    display: block;
+    margin-top: 20px;
+    font-family: "Jura", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: normal; }
+  .filial-connections{
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 140px; }
+  .filial-connections__el{
+    display: block;
+    font-family: "Jura", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal; } }
   @media (min-width: 1280px){
   .header{
     background-image: url("../img/fon1.jpg");
@@ -935,17 +1027,11 @@ body {
     line-height: 30px; }
   .comments-slider .slick-dots li{
     width: 15px;
-    height: 15px; } }
-  @media (max-width: 320px){
+    height: 15px; }
   .contacts__title{
-    font-size: 20px; }
-  .filial__title{
-    display: block;
-    width: 50%; }
-  .filial__manager{
-    display: none; }
-  .filial-connections{
-    display: none; }
+    font-size: 30px;
+    margin-top: 60px; } }
+  @media (max-width: 320px){
   .prices__title{
     font-size: 20px; }
   .prices-filial{
@@ -960,8 +1046,5 @@ body {
     font-size: 12px; }
   .footer__tel{
     font-size: 12px; } }
-  @media (max-width: 768px){
-  .filial{
-    width: 24%; } }
 
 /*# sourceMappingURL=style.css.map */

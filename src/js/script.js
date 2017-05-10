@@ -41,6 +41,42 @@ $(document).ready(function(){
 
   // $('.comments-slider').find('sli')
 
+  $('.filial__modal-window').hide();
+  $('.filial__title').on('click', OpenModal); 
+  $('.close-modal').on('click',CloseModal);
+  $('#overlay').on('click',CloseModal);
+
+  function OpenModal(event){ 
+  event.preventDefault();
+
+  $('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
+      function(){ // пoсле выпoлнения предъидущей aнимaции
+        $('#filial__modal-window') 
+          .css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
+          .animate({opacity: 1, top: '50%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+    });
+
+  // var ActiveId = $(this);
+  // var ActiveModal = ActiveId.siblings('filial__modal-window');
+  // ActiveModal.show();
+  };
+
+  function CloseModal(event){
+    $('#filial__modal-window')
+      .animate({opacity: 0, top: '45%'}, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
+        function(){ // пoсле aнимaции
+          $(this).css('display', 'none'); // делaем ему display: none;
+          $('#overlay').fadeOut(400); // скрывaем пoдлoжку
+        }
+      );
+    // $('.filial__modal-window').hide();
+  };
+
+
+
+
+
+
   $('.accordion dd').hide(); 
   $('.accordion dd:eq(0)').show(); 
 
