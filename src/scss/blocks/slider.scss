@@ -61,11 +61,12 @@
   }
 
   &__item__right{
-    width: 75%;
+    width: 70%;
     float: right;
     background-image: url("../../img/message.png");
     background-position: -10px -10px;
     background-repeat: no-repeat;
+    background-size: 100%;
     display: inline-block;
     vertical-align: top;
     overflow: hidden;
@@ -138,7 +139,7 @@
 .slick-dots li{
   width: 15px;
   height: 15px;
-  background-color: #f7f7f7;
+  background-color: #b2dad0;
   margin: 0 10px;
 
   @media ( min-width: $screen-sm){
@@ -152,17 +153,18 @@
   }
 }
 
-.comments-slider .slick-dots li{
- 
-  // margin-right: 25px;
-}
+// .slick-dots li{
+//   width: 15px;
+//   height: 15px;
+//   background-color: #b2dad0;
+//   // margin-right: 25px;
+// }
 
 // .slick-dots li .slick-active{
 //   background-color: #fff;
 // }
-
-.comments-slider .slick-dots li.slick-active {
-  background-color: #2f4159;
+.slick-dots li.slick-active {
+  background-color: #03eaa5;
 }
 
 .slick-list {
