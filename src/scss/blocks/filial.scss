@@ -4,6 +4,16 @@
   width: 45%;
   margin-bottom: 20px;
 
+  @media ( min-width: $screen-sm){
+    width: 23%;
+    margin-right: 1%;
+  }
+
+  @media ( min-width: $screen-md){
+    width: 16.4%;
+    margin-right: 0;
+  }
+
   // @media ( max-width: $screen-sm) {
   //   width: 24%;
   // }
@@ -53,7 +63,7 @@
     @media ( min-width: $screen-sm){
       display: block;
       margin-top: 40px;
-      margin-bottom: 140px;
+      margin-bottom: 60px;
     }
   
     &__el{
@@ -63,7 +73,7 @@
       display: block;
       font-family: $font-p;
       font-size: 14px;
-      line-height: 24px;
+      // line-height: 24px;
       color: #fff;
       text-decoration: none;
       font-weight: normal;
