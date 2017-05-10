@@ -229,16 +229,21 @@ body {
   height: 500px; }
 
 .main-nav {
-  display: block;
+  display: none;
   margin-top: 0;
   padding-left: 10px;
-  z-index: 1; }
+  z-index: 5;
+  background-color: #1c1531;
+  width: 40%;
+  padding-top: 10px; }
   .main-nav__list {
-    display: none;
-    padding: 0;
-    background: rgba(28, 21, 49, 0.5); }
+    display: block;
+    z-index: 6;
+    padding-top: 100px;
+    padding-bottom: 117px;
+    padding-left: 0; }
   .main-nav__item {
-    display: inline-block; }
+    display: block; }
   .main-nav__link {
     text-decoration: none;
     font-family: "Jura", sans-serif;
@@ -266,14 +271,19 @@ body {
     line-height: 36px; }
 
 .nav-burger {
-  display: block;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 50%; }
+
+.burger-open {
+  display: block;
+  background-image: url("../img/polosi.png");
   margin-top: 10px;
-  background-image: url("../img/polosi.png"); }
-  .nav-burger--krest {
-    background-image: url("../img/krest.png"); }
+  margin-left: 10px; }
+
+.burger-close {
+  background-image: url("../img/krest.png");
+  display: block; }
 
 .side-bar {
   display: inline-block;
@@ -610,7 +620,7 @@ body {
 
 .contacts {
   width: 100%;
-  background-image: url("../../img/fon_contacts.jpg");
+  background-image: url("../img/fon_contacts.jpg");
   background-repeat: no-repeat;
   display: -ms-flexbox;
   display: flex;
@@ -885,20 +895,31 @@ body {
     background-position: 0 -20px;
     height: 552px; }
   .main-nav{
-    padding-left: 0px; }
-  .main-nav{
+    width: 100%;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(28, 21, 49, 0.5);
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-top: 20px; }
   .main-nav__list{
+    padding: 0;
     padding-left: 0;
     width: 100%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin: 0; }
+  .main-nav__item{
+    display: inline-block; }
   .main-nav__link{
-    font-size: 16px; }
+    font-size: 16px;
+    vertical-align: middle;
+    display: inline-block; }
   .nav-burger{
     display: none; }
   .side-bar{

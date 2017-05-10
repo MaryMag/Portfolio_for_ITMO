@@ -1,55 +1,58 @@
 .main-nav {
-    display: block;
+    display: none;
     margin-top: 0;
     padding-left: 10px;
-    z-index: 1;
+    z-index: 5;
+    background-color: #1c1531;
+    width: 40%;
+    padding-top: 10px;
+
     @media (min-width: $screen-sm){
+      width: 100%;
       padding-left: 0px;
-    }
-    // height: 500px;
-
-
-  @media (min-width: $screen-sm){
-    display: flex;
-    margin-top: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background: rgba(28, 21, 49, 0.5);
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
   }
 
   &__list {
-    display: none;
-    padding: 0;
-    background: rgba(28, 21, 49, 0.5);
+    display: block;
+    // margin-top: 100px;
+    // width: 40%;
+    z-index: 6;
+    padding-top: 100px;
+    padding-bottom: 117px;
+    padding-left: 0;
+
+   
 
     @media (min-width: $screen-sm){
-  //     display: inline-block;
-  //     width: 100%;
-  //   }
-  // @media (min-width: $screen-sm){
+    padding: 0;
+    // background: rgba(28, 21, 49, 0.5);
     padding-left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin: 0;
   }
 
     @media (min-width: $screen-md){
       justify-content: space-around;
     }
 
-  //   @media ( max-width: $screen-xs){
-  //     overflow: hidden;
-  //     display: block;
-  //     margin-top: 120px;
-  //   }
   }
 
 
   &__item {
-    display: inline-block;
-    // justify-content: flex-end;
-    // @media ( max-width: $screen-xs){
-    //   float: left;
-    //   display: block;
-    //   width: 100%;
-    // }
+    display: block;
+    // width: 100%;
+    
+    @media (min-width: $screen-sm){
+      display: inline-block;
+    }
   }
 
 
@@ -63,6 +66,8 @@
 
     @media (min-width: $screen-sm){
       font-size: 16px;
+      vertical-align: middle;
+      display: inline-block;
     }
 
   //   @media ( max-width: $screen-xs){
