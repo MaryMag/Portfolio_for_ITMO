@@ -45,7 +45,7 @@ $(document).ready(function(){
   function OpenBurger(event){
     event.preventDefault();
     $('.main-nav').css('display','block').show();
-    $('.burger-open').hide();
+    $('.burger-open').css('display','none').hide();
   };
 
   $('.burger-close').on('click', CloseBurger);
