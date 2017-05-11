@@ -25,6 +25,7 @@
       float: right;
       // padding-left: 10px;
       overflow: hidden;
+      position: relative;
       // position: relative;
     }
     // float: right;
@@ -53,9 +54,15 @@
     font-size: 12px;
     line-height: 19px;
 
+    @media ( min-width: $screen-sm){
+    margin-top: 90px;
+    }
+
     @media ( min-width: $screen-md){
       font-size: 16px;
     line-height: 30px;
+    margin-top: 150px;
+    // height: 250px;
     }
   }
 
@@ -64,7 +71,9 @@
     justify-content: space-between;
 
     @media ( min-width: $screen-sm){
-      // position: absolute;
+      position: absolute;
+      top: 30%;
+      width: 100%;
 
     }
   }
