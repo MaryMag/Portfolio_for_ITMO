@@ -1,5 +1,25 @@
 $(document).ready(function(){
   // весь ваш код
+//   $('a[href*=#]').bind("click", function(e){
+//   var anchor = $(this);
+//   $('html, body').stop().animate({
+//   scrollTop: $(anchor.attr('href')).offset().top
+//   }, 1000);
+//   e.preventDefault();
+//   });
+//   return false;});
+
+// $(document).ready(function(){
+
+  $("a.scrollto").click(function() {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 800);
+    return false;
+  });
+
   $('.slider').slick({
     dots: true,
     slidesToShow: 1,
@@ -44,15 +64,15 @@ $(document).ready(function(){
   $('.burger-open').on('click', OpenBurger);
   function OpenBurger(event){
     event.preventDefault();
-    $('.main-nav').css('display','block').show();
-    $('.burger-open').css('display','none').hide();
+    $('.main-nav').fadeIn(400);
+    $('.burger-open').fadeOut(700);
   };
 
   $('.burger-close').on('click', CloseBurger);
   function CloseBurger(event){
     event.preventDefault();
-    $('.main-nav').css('display','none').hide();
-    $('.burger-open').show();
+    $('.main-nav').fadeOut(700);
+    $('.burger-open').fadeIn(400);
   };
 
   $('.filial__modal-window').hide();
@@ -79,6 +99,7 @@ $(document).ready(function(){
   };
 
   function CloseModal(event){
+    event.preventDefault();
     $('#filial__modal-window')
       .animate({opacity: 0, top: '45%'}, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
         function(){ // пoсле aнимaции
@@ -89,6 +110,8 @@ $(document).ready(function(){
     // $('.filial__modal-window').hide();
   };
 
+// $('rel="tab1"').show();
+// $('.tab_container h3').removeClass('.d_active');
 
 $('.tabs li').on('click', function() { 
 $(this).addClass('active') 
@@ -115,12 +138,13 @@ activePanel
   $('dt a').on('click', switchTab); 
 
   function switchTab(event){ 
-  event.preventDefault(); 
+  event.preventDefault();
 
+  $('dt a').removeClass('prices-filial--active');
   var ActiveId = $(this); 
   ActiveId.addClass('prices-filial--active');
-  var OtherId = ActiveId.siblings('dt');
-  OtherId.removeClass('prices-filial--active');
+  // var OtherId = ActiveId.siblings('dt');
+  // OtherId.removeClass('prices-filial--active');
 
 
   var ActiveText = ActiveId.parent().next(); 
