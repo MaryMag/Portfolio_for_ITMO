@@ -27,7 +27,8 @@
       height: auto;
       display: block;
       text-align: center;
-      margin-top: 14px;
+      vertical-align: center;
+      // margin-top: 14px;
       /*margin-left: 7%;
       margin-top: 3%;*/
       @media ( min-width: $screen-sm){
@@ -66,6 +67,7 @@
       font-size: 18px;
       font-weight: bold;
       color: #362e13;
+      margin: 0;
 
       @media ( min-width: $screen-sm){
       font-size: 24px;
@@ -73,6 +75,7 @@
 
       @media ( min-width: $screen-md){
         font-size: 28px;
+        line-height: 40px;
       }
     }
 
@@ -81,7 +84,7 @@
       font-size: 12px;
       font-weight: normal;
       color: #362e13;
-      margin-top: 20px;
+      margin-top: 10px;
       line-height: 26px;
 
       @media ( min-width: $screen-sm){

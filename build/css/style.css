@@ -167,6 +167,7 @@ body {
 .slick-dots {
   position: absolute;
   bottom: -25px;
+  left: 44%;
   list-style: none;
   display: block;
   text-align: center;
@@ -259,7 +260,7 @@ body {
       font-size: 10px;
       line-height: 40px; }
     .menu__el__link:hover {
-      color: #dac93d;
+      color: #fff;
       text-decoration: underline; }
 
 .main {
@@ -267,7 +268,7 @@ body {
   overflow: hidden; }
 
 .promo {
-  background-image: url(../img/fon_header.jpg);
+  background-color: #dac93d;
   background-repeat: no-repeat;
   webkit-background-size: cover;
   background-size: cover;
@@ -279,8 +280,8 @@ body {
   .promo__text {
     display: block;
     text-align: center;
-    margin-top: 310px;
-    margin-bottom: 260px; }
+    margin-top: 210px;
+    margin-bottom: 160px; }
   .promo__title {
     font-family: "Ubuntu", sans-serif;
     font-weight: bold;
@@ -327,7 +328,7 @@ body {
       height: auto;
       display: block;
       text-align: center;
-      margin-top: 14px;
+      vertical-align: center;
       /*margin-left: 7%;
       margin-top: 3%;*/ }
   .aboutme__info-block {
@@ -338,12 +339,13 @@ body {
     .aboutme__info-block__title {
       font-size: 18px;
       font-weight: bold;
-      color: #362e13; }
+      color: #362e13;
+      margin: 0; }
     .aboutme__info-block__text {
       font-size: 12px;
       font-weight: normal;
       color: #362e13;
-      margin-top: 20px;
+      margin-top: 10px;
       line-height: 26px; }
   .aboutme__personality {
     width: 100%;
@@ -403,10 +405,11 @@ body {
   background-size: cover;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 30px; }
+  padding-bottom: 70px;
+  overflow: hidden; }
   .portfolio__title {
     text-align: center;
-    margin-bottom: 35px; }
+    margin-top: 60px; }
   .portfolio__link {
     transition: all 0.3s;
     opacity: 0.9;
@@ -425,7 +428,8 @@ body {
     text-align: center;
     overflow: hidden;
     width: 20%;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 80px;
     vertical-align: top;
     padding-left: 2%; }
 
@@ -443,7 +447,7 @@ body {
 .slick-dots {
   display: inline-block;
   text-align: left;
-  padding: 0; }
+  padding-left: 0; }
 
 .slick-dots li button:before {
   display: none; }
@@ -455,7 +459,8 @@ body {
   margin: 0 10px; }
 
 .slick-dots li.slick-active {
-  background-color: #362e13; }
+  background-color: #362e13;
+  opacity: 0.7; }
 
 .slick-list {
   width: 90%; }
@@ -532,6 +537,9 @@ body {
     height: 78px; }
   .menu__el__link{
     font-size: 14px; }
+  .promo__text{
+    margin-top: 310px;
+    margin-bottom: 260px; }
   .promo__title{
     font-size: 36px;
     line-height: 48px; }
@@ -593,7 +601,8 @@ body {
   .aboutme__info-block{
     padding-left: 17px; }
   .aboutme__info-block__title{
-    font-size: 28px; }
+    font-size: 28px;
+    line-height: 40px; }
   .aboutme__info-block__text{
     font-size: 16px; }
   .skills-column{
