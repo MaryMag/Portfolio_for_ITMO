@@ -38,7 +38,11 @@
         <div class="container">
           <h2 class="title">Обо мне</h2>
           <div class="aboutme__photo-section">
-            <img src="img/photo.jpg" alt="" class="aboutme__photo-section__img">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/photo.jpg">
+              <!-- <source media="(min-width: 1200px)" srcset="img/mega-carpet.jpg"> -->
+              <img src="img/photo_mobile.jpg" alt="logo" class="aboutme__photo-section__img">
+            </picture>
           </div>
           <div class="aboutme__info-block">
             <h3 class="aboutme__info-block__title">Магнитова Мария</h3>
@@ -106,14 +110,22 @@
         </div>
       </section>
 
-      <section class="portfilio" id="portfolio_index">
+      <section class="portfolio" id="portfolio_index">
         <div class="container">
           <h2 class="title title--white portfolio__title">Портфолио</h2>
-          <div class="portfolio-works">
-            <a href="#" class="portfolio__link"><img src="img/cats.jpg" alt="" class="portfolio__img"></a>
-            <a href="#" class="portfolio__link"><img src="img/splash.jpg" alt="" class="portfolio__img"></a>
-            <a href="#" class="portfolio__link"><img src="img/north.jpg" alt="" class="portfolio__img"></a>
-            <a href="#" class="portfolio__link"><img src="img/balls.jpg" alt="" class="portfolio__img"></a>
+          <div class="portfolio-works slider responsive">
+            <div class="slider__item">
+              <a href="#" class="portfolio__link"><img src="img/cats.jpg" alt="" class="portfolio__img"></a>
+            </div>
+            <div class="slider__item">
+              <a href="#" class="portfolio__link"><img src="img/splash.jpg" alt="" class="portfolio__img"></a>
+            </div>
+            <div class="slider__item">
+              <a href="#" class="portfolio__link"><img src="img/north.jpg" alt="" class="portfolio__img"></a>
+            </div>
+            <div class="slider__item">
+              <a href="#" class="portfolio__link"><img src="img/balls.jpg" alt="" class="portfolio__img"></a>
+            </div>            
           </div>
         </div>
       </section>
@@ -145,5 +157,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.min.js"></script>
+
   </body>
 </html>

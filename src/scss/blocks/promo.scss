@@ -1,12 +1,12 @@
 .promo{
-  background-color: #dac93d;
-/*  background-image: url(../img/fon_header.jpg);*/
+  // background-color: #dac93d;
+  background-image: url(../img/fon_header.jpg);
   background-repeat: no-repeat;
   webkit-background-size: cover;
   background-size: cover;
   width: 100%;
 /*  position: relative;*/
-/*  background-position: 0 -100px;*/
+  // background-position: 0 -100px;
   height: 100%;
   display: flex;
   // background-position: -500px 0;
@@ -14,8 +14,8 @@
   &__text{
     display: block;
     text-align: center;
-    margin-top: 210px;
-    margin-bottom: 210px;
+    margin-top: 310px;
+    margin-bottom: 260px;
   }
 
   &__title{

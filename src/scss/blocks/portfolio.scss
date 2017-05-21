@@ -1,0 +1,56 @@
+.portfolio {
+  width: 100%;
+  background-color: #dac93d;
+/*  background-color: #dac93d;*/
+  // background-image: url(../img/fon_portfolio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  padding-bottom: 30px;
+
+  &__title{
+    text-align: center;
+    margin-bottom: 35px;
+    // margin-top: 65px;
+  }
+
+  // &-works {
+  //   width: 100%;
+  //   display: block;
+  //   // display: flex;
+  //   // justify-content: space-around;
+  //   margin-bottom: 120px;
+  //   // margin-top: 90px;
+
+  //   @media ( min-width: $screen-sm){
+  //     display: flex;
+  //     justify-content: space-around;
+  //   }
+  // }
+
+  &__link{
+    transition: all 0.3s;
+    opacity: 0.9;
+    width: auto;
+    // width: 60%;
+
+    @media ( min-width: $screen-sm){
+      // width: 24%;
+    }
+  }
+
+  // &__link:hover{
+  //   transform: scale(1.2);
+  //   opacity: 1;
+  // }
+
+  &__img{
+    // width: 100%;
+    width: auto;
+  /*  width: 220px;
+    height: 330px;*/
+  }
+
+
+
+}
