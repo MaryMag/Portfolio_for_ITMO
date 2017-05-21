@@ -1,0 +1,58 @@
+.skills{
+  width: 100%;
+  margin-top: 30px;
+  overflow: hidden;
+
+  &-column{
+    width: 80%;
+    display: inline-block;
+    float: left;
+    margin-right: 40px;
+
+    @media ( min-width: $screen-sm){
+      width: 40%;
+    }
+  }
+
+  &_el{
+    width: 100%;
+    height: 30px;
+    border: 2px solid #362e13;
+    display: inline-block;
+    margin-bottom: 20px;
+
+    &__level{
+      background-color: #dac93d;
+      height: 100%;
+
+      &--100{ width: 100%;}
+
+      &--60{ width: 60%;}
+
+      &--40{ width: 40%;}
+
+      &--50{ width: 50%;}
+
+      &--90{ width: 90%;}
+
+      &--80{ width: 80%;}
+
+      &--70{ width: 70%;}
+    }
+
+    &__name{
+      font-family: Arial;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+      vertical-align: middle;
+      color: #fff;
+      margin: 0;
+
+      @media ( min-width: $screen-md){
+       font-size: 20px;
+      }
+    }
+  }
+}

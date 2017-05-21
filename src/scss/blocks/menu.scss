@@ -1,0 +1,35 @@
+.menu{
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+
+  &__el{
+    display: inline-block;
+    vertical-align: middle;
+
+    &__link{
+      text-decoration: none;
+      color: #362e13;
+      font-family: $font-h;
+      font-size: 10px;
+      line-height: 40px;
+
+      @media ( min-width: $screen-sm){
+        font-size: 14px;
+      }
+
+      @media ( min-width: $screen-md){
+        font-size: 18px;
+      }
+    }
+
+    &__link:hover{
+      color: #dac93d;
+      text-decoration: underline;
+    }
+  }
+
+}

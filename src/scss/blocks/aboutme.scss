@@ -1,0 +1,80 @@
+.aboutme {
+  width: 100%;
+  display: flex;
+
+  &__photo-section{
+    width: 28%;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+  /*  float: left;*/
+
+    &__img{
+    /*  width: 240px;
+      height: 363px;*/
+      width: 100%;
+      display: block;
+      text-align: center;
+      margin-top: 14px;
+      /*margin-left: 7%;
+      margin-top: 3%;*/
+    }
+
+  }
+
+  &__info-block{
+    width: 70%;
+    overflow: hidden;
+    display: inline-block;
+  /*  float: right;*/
+
+    &__title{
+      // font-family: Arial;
+      font-size: 18px;
+      font-weight: bold;
+      color: #362e13;
+
+      @media ( min-width: $screen-sm){
+      font-size: 24px;
+      }
+
+      @media ( min-width: $screen-md){
+        font-size: 28px;
+      }
+    }
+
+    &__text{
+      // font-family: Arial;
+      font-size: 12px;
+      font-weight: normal;
+      color: #362e13;
+      margin-top: 20px;
+      line-height: 26px;
+
+      @media ( min-width: $screen-sm){
+      font-size: 16px;
+      }
+
+      @media ( min-width: $screen-md){
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__personality{
+    width: 100%;
+    margin-top: 40px;
+    // font-family: Arial;
+    font-size: 12px;
+    line-height: 24px;
+    color: #362e13;
+    margin-bottom: 20px;
+
+    @media ( min-width: $screen-sm){
+      font-size: 16px;
+      margin-bottom: 50px;
+    }
+  }
+
+
+}

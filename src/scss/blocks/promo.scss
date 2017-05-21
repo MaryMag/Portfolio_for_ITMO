@@ -1,0 +1,54 @@
+.promo{
+  background-color: #dac93d;
+/*  background-image: url(../img/fon_header.jpg);*/
+  background-repeat: no-repeat;
+  webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+/*  position: relative;*/
+/*  background-position: 0 -100px;*/
+  height: 100%;
+  display: flex;
+  // background-position: -500px 0;
+
+  &__text{
+    display: block;
+    text-align: center;
+    margin-top: 210px;
+    margin-bottom: 210px;
+  }
+
+  &__title{
+    font-family: $font-h;
+    font-weight: bold;
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+    line-height: 36px;
+    @media ( min-width: $screen-sm){
+        font-size: 36px;
+        line-height: 48px;
+    }
+    @media ( min-width: $screen-md){
+        font-size: 50px;
+        line-height: 72px;
+    }
+  }
+
+  &__about{
+    font-family: $font-h;
+    font-weight: normal;
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+
+    @media ( min-width: $screen-sm){
+        font-size: 24px;
+    }
+
+    @media ( min-width: $screen-sm){
+        font-size: 36px;
+        line-height: 64px;
+    }
+  }
+}
