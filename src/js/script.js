@@ -12,7 +12,7 @@ $(document).ready(function(){
 
   $('.slider').slick({
     dots: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     infinite: true, 
     speed: 300,

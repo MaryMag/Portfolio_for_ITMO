@@ -1,6 +1,20 @@
 .aboutme {
   width: 100%;
   display: flex;
+  padding-bottom: 0;
+
+  @media ( min-width: $screen-sm){
+    padding-bottom: 80px;
+  }
+
+  &__title{
+    margin-bottom: 20px;
+
+    @media ( min-width: $screen-sm){
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
 
   &__photo-section{
     width: 100%;
@@ -67,15 +81,18 @@
       font-size: 18px;
       font-weight: bold;
       color: #362e13;
-      margin: 0;
+      margin-top: 18px;
+      margin-bottom: 0;
 
       @media ( min-width: $screen-sm){
       font-size: 24px;
+      margin: 0;
       }
 
       @media ( min-width: $screen-md){
         font-size: 28px;
         line-height: 40px;
+        // margin-bottom: 40px;
       }
     }
 
@@ -105,11 +122,24 @@
     color: #362e13;
     margin-bottom: 20px;
     overflow: hidden;
+    display: block;
+
 
     @media ( min-width: $screen-sm){
-      margin-top: 40px;
-      font-size: 16px;
-      margin-bottom: 50px;
+      // margin-top: 40px;
+      // font-size: 16px;
+      // margin-bottom: 50px;
+      display: none;
+    }
+
+    &--photo{
+      display: none;
+
+      @media ( min-width: $screen-sm){
+        display: block;
+        font-size: 16px;
+        margin-top: 40px;
+      }
     }
   }
 

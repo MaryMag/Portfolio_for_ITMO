@@ -308,13 +308,16 @@ body {
   .title--black {
     color: #362e13; }
   .title--footer {
-    text-align: right;
-    margin-bottom: 50px; }
+    text-align: center;
+    margin-top: 0; }
 
 .aboutme {
   width: 100%;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding-bottom: 0; }
+  .aboutme__title {
+    margin-bottom: 20px; }
   .aboutme__photo-section {
     width: 100%;
     display: block;
@@ -340,7 +343,8 @@ body {
       font-size: 18px;
       font-weight: bold;
       color: #362e13;
-      margin: 0; }
+      margin-top: 18px;
+      margin-bottom: 0; }
     .aboutme__info-block__text {
       font-size: 12px;
       font-weight: normal;
@@ -353,7 +357,10 @@ body {
     line-height: 24px;
     color: #362e13;
     margin-bottom: 20px;
-    overflow: hidden; }
+    overflow: hidden;
+    display: block; }
+    .aboutme__personality--photo {
+      display: none; }
 
 .skills {
   width: 100%;
@@ -428,7 +435,7 @@ body {
     text-align: center;
     overflow: hidden;
     width: 20%;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 80px;
     vertical-align: top;
     padding-left: 2%; }
@@ -455,6 +462,7 @@ body {
 .slick-dots li {
   width: 15px;
   height: 15px;
+  border-radius: 50% 50%;
   background-color: #fff;
   margin: 0 10px; }
 
@@ -472,7 +480,7 @@ body {
   display: -ms-flexbox;
   display: flex; }
   .why__title {
-    margin-bottom: 10px;
+    margin-bottom: 0;
     /*  margin-top: 100px;*/ }
   .why__disc {
     font-size: 12px;
@@ -498,29 +506,35 @@ body {
 
 .contacts {
   width: 100%;
-  /*  background-color: #dac93d;*/
-  background-image: url(../img/fon_footer.jpg);
+  background-color: #dac93d;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding-top: 20px;
+  vertical-align: top; }
+  .contacts_img {
+    display: block;
+    width: 90%;
+    overflow: hidden; }
+    .contacts_img_el {
+      width: 100%; }
   .contacts_text {
-    width: 95%;
-    margin-right: 7px; }
+    width: 90%;
+    margin-right: 7px;
+    vertical-align: top; }
   .contacts__info {
     font-size: 20px;
     line-height: 28px;
     color: #fff;
-    text-align: right;
+    text-align: center;
     margin: 0; }
-  .contacts__info:first-child {
-    margin-top: 70px; }
 
 .socials {
-  text-align: right;
+  text-align: center;
   margin-bottom: 60px;
-  margin-top: 10px; }
+  margin-top: 50px; }
   .socials__link {
     display: inline-block; }
   .socials__el {
@@ -550,6 +564,15 @@ body {
     line-height: 64px; }
   .title{
     font-size: 24px; }
+  .title--footer{
+    text-align: right;
+    margin-bottom: 16%;
+    margin-top: 40%; }
+  .aboutme{
+    padding-bottom: 80px; }
+  .aboutme__title{
+    margin-top: 50px;
+    margin-bottom: 50px; }
   .aboutme__photo-section{
     width: 28%;
     display: inline-block;
@@ -561,13 +584,16 @@ body {
     display: inline-block;
     padding-left: 5px; }
   .aboutme__info-block__title{
-    font-size: 24px; }
+    font-size: 24px;
+    margin: 0; }
   .aboutme__info-block__text{
     font-size: 16px; }
   .aboutme__personality{
-    margin-top: 40px;
+    display: none; }
+  .aboutme__personality--photo{
+    display: block;
     font-size: 16px;
-    margin-bottom: 50px; }
+    margin-top: 40px; }
   .skills-column{
     width: 40%; }
   .slider__item{
@@ -575,13 +601,25 @@ body {
   .slick-list{
     width: 100%; }
   .why__disc{
-    font-size: 16px; }
+    font-size: 16px;
+    margin-bottom: 80px; }
   .why__video__el{
     width: 49%;
+    display: inline-block;
+    margin-bottom: 90px; }
+  .contacts_img{
+    display: inline-block;
+    width: 60%; }
+  .contacts_text{
+    width: 35%;
     display: inline-block; }
   .contacts__info{
     font-size: 24px;
-    line-height: 40px; } }
+    line-height: 40px;
+    text-align: right; }
+  .socials{
+    text-align: right;
+    margin-top: 10px; } }
     @media (min-width: 1280px){
   .container{
     width: 1170px; }
@@ -593,11 +631,9 @@ body {
   .promo__title{
     font-size: 50px;
     line-height: 72px; }
-  .title{
-    margin-bottom: 40px; }
   .title--footer{
-    margin-top: 80px;
-    margin-bottom: 220px; }
+    margin-top: 40%;
+    margin-bottom: 35%; }
   .aboutme__info-block{
     padding-left: 17px; }
   .aboutme__info-block__title{
@@ -612,7 +648,7 @@ body {
   .why__video{
     margin-bottom: 50px; }
   .contacts_text{
-    width: 100%; }
+    margin-right: 20px; }
   .socials{
     margin-bottom: 120px; } }
 

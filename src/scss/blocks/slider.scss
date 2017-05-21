@@ -9,7 +9,7 @@
     // margin: 0 auto;
     overflow: hidden;
     width: 20%;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 80px;
     vertical-align: top;
     padding-left: 2%;
@@ -50,6 +50,7 @@
 .slick-dots li{
   width: 15px;
   height: 15px;
+  border-radius: 50% 50%;
   background-color: #fff;
   margin: 0 10px;
 
