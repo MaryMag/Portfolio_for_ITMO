@@ -165,9 +165,6 @@ body {
   margin-bottom: 30px; }
 
 .slick-dots {
-  position: absolute;
-  bottom: -25px;
-  left: 44%;
   list-style: none;
   display: block;
   text-align: center;
@@ -438,7 +435,7 @@ body {
     margin-top: 30px;
     margin-bottom: 80px;
     vertical-align: top;
-    padding-left: 2%; }
+    padding-left: 1%; }
 
 .slick-prev:before, .slick-next:before {
   display: none; }
@@ -453,7 +450,7 @@ body {
 
 .slick-dots {
   display: inline-block;
-  text-align: left;
+  text-align: center;
   padding-left: 0; }
 
 .slick-dots li button:before {
@@ -633,7 +630,7 @@ body {
     line-height: 72px; }
   .title--footer{
     margin-top: 40%;
-    margin-bottom: 35%; }
+    margin-bottom: 45%; }
   .aboutme__info-block{
     padding-left: 17px; }
   .aboutme__info-block__title{
