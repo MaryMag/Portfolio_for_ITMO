@@ -1,6 +1,8 @@
 $(document).ready(function(){
   // весь ваш код
 
+  // $(".block").show('slow');
+
   $("a.scrollto").click(function() {
     var elementClick = $(this).attr("href")
     var destination = $(elementClick).offset().top;
