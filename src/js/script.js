@@ -14,7 +14,7 @@ $(document).ready(function(){
 
   $('.responsive').slick({
     dots: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true, 
     speed: 300,
