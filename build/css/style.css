@@ -223,7 +223,7 @@ body {
   position: absolute; }
 
 .container {
-  width: 95%;
+  width: 97%;
   margin: 0 auto;
   overflow: hidden; }
 
@@ -490,7 +490,7 @@ body {
     margin-top: 40px;
     margin-bottom: 0; }
   .why__video__el {
-    width: 90%;
+    width: 100%;
     display: block;
     margin-bottom: 15px;
     /*  float: left;*/ }
@@ -513,12 +513,12 @@ body {
   vertical-align: top; }
   .contacts_img {
     display: block;
-    width: 90%;
+    width: 100%;
     overflow: hidden; }
     .contacts_img_el {
       width: 100%; }
   .contacts_text {
-    width: 90%;
+    width: 100%;
     margin-right: 7px;
     vertical-align: top; }
   .contacts__info {
